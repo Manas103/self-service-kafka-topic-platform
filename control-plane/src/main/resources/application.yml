@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: self-service-kafka-control-plane
+  kafka:
+    bootstrap-servers: localhost:9092
+
+platform:
+  output-dir: generated
+  grafana:
+    template-path: ../grafana/templates/topic-dashboard-template.json
+  cost:
+    rate-usd-per-gb-month: 0.023

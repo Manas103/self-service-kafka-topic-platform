@@ -1,0 +1,11 @@
+44:[INFO] Running com.manas.kafkaplatform.clientlib.DeterminismInvariantTest
+45:[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s -- in com.manas.kafkaplatform.clientlib.DeterminismInvariantTest
+46:[INFO] Running com.manas.kafkaplatform.clientlib.FalseRejectionTest
+47:[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.manas.kafkaplatform.clientlib.FalseRejectionTest
+48:[INFO] Running com.manas.kafkaplatform.clientlib.ValidationReferenceOracleTest
+49:[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s -- in com.manas.kafkaplatform.clientlib.ValidationReferenceOracleTest
+53:[INFO] Tests run: 44, Failures: 0, Errors: 0, Skipped: 0
+91:[INFO] Running com.manas.kafkaplatform.controlplane.TopicProvisioningIntegrationTest
+1362:[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.923 s -- in com.manas.kafkaplatform.controlplane.TopicProvisioningIntegrationTest
+1366:[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+1375:[INFO] BUILD SUCCESS

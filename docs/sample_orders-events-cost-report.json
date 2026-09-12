@@ -1,0 +1,13 @@
+{
+  "topicName" : "orders-events",
+  "partitions" : 3,
+  "replicationFactor" : 1,
+  "retentionMs" : 3600000,
+  "estimatedMessagesPerDay" : 50000,
+  "estimatedAvgMessageSizeBytes" : 512,
+  "estimatedBytesPerDay" : 2.56E7,
+  "estimatedRetainedGb" : 9.934107462565103E-4,
+  "ratePerGbMonthUsd" : 0.023,
+  "estimatedMonthlyCostUsd" : 2.2848447163899735E-5,
+  "methodology" : "ESTIMATE from declared message-rate/size assumptions and retention window; not a measurement of actual broker disk usage and not a billed cloud cost"
+}

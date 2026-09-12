@@ -1,0 +1,3 @@
+valid-configuration run: 200 configs (100 producer, 100 consumer)
+
+result: 0/200 false rejections

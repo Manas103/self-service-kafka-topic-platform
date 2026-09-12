@@ -1,0 +1,61 @@
+{
+  "title": "Kafka Topic: orders-events",
+  "uid": "topic-orders-events",
+  "tags": ["self-service-kafka", "auto-generated"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "refresh": "30s",
+  "templating": {
+    "list": [
+      {
+        "name": "topic",
+        "type": "constant",
+        "current": { "value": "orders-events" }
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Messages In / sec (orders-events)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "targets": [
+        { "expr": "sum(rate(kafka_topic_messages_in_total{topic=\"orders-events\"}[5m]))" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Bytes In / sec (orders-events)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "targets": [
+        { "expr": "sum(rate(kafka_topic_bytes_in_total{topic=\"orders-events\"}[5m]))" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Partition Count (3)",
+      "type": "stat",
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 8 },
+      "targets": [
+        { "expr": "count(kafka_topic_partition_current_offset{topic=\"orders-events\"})" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Consumer Group Lag (orders-events)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 12 },
+      "targets": [
+        { "expr": "sum(kafka_consumergroup_lag{topic=\"orders-events\"}) by (consumergroup)" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Retention (ms): 3600000",
+      "type": "stat",
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 12 }
+    }
+  ]
+}

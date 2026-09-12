@@ -1,0 +1,8 @@
+target/
+*.class
+.idea/
+*.iml
+.vscode/
+*.log
+# regenerated per-topic artifacts, recreate with: POST /topics against a running control-plane
+control-plane/generated/
