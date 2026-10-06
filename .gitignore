@@ -6,3 +6,8 @@ target/
 *.log
 # regenerated per-topic artifacts, recreate with: POST /topics against a running control-plane
 control-plane/generated/
+
+# service-platform: Go build output and regenerated per-service artifacts
+service-platform/controlplane/provisionctl
+service-platform/generated/
+service-platform/*.log

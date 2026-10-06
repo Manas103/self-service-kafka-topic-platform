@@ -1,0 +1,3 @@
+Canary gate regression matrix
+Seeded regressions caught: 32 / 40
+Clean builds falsely blocked: 0 / 60

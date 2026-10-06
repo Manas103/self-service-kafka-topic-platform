@@ -1,0 +1,12 @@
+service: payments-api
+image: nginx:1.27-alpine
+port: 80
+healthCheckPath: /
+replicas: 1
+cpu: 256
+memoryMb: 512
+env.LOG_LEVEL: info
+env.REGION: us-east-1
+team: payments
+alertEmail: payments-oncall@example.com
+maxUnhealthySeconds: 30

@@ -1,0 +1,35 @@
+{
+  "title": "payments-api (payments)",
+  "tags": [
+    "service-platform",
+    "payments-api",
+    "payments"
+  ],
+  "panels": [
+    {
+      "title": "Request rate",
+      "type": "graph",
+      "expr": "rate(payments-api_requests_total[1m])"
+    },
+    {
+      "title": "Error rate",
+      "type": "graph",
+      "expr": "rate(payments-api_errors_total[1m])"
+    },
+    {
+      "title": "Availability",
+      "type": "stat",
+      "expr": "1 - (rate(payments-api_errors_total[5m]) / rate(payments-api_requests_total[5m]))"
+    },
+    {
+      "title": "p99 duration (ms)",
+      "type": "graph",
+      "expr": "payments-api_duration_p99_ms"
+    },
+    {
+      "title": "Saturation (in-flight)",
+      "type": "graph",
+      "expr": "payments-api_inflight"
+    }
+  ]
+}

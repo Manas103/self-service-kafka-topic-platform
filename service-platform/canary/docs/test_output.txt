@@ -1,0 +1,7 @@
+canary-gate test suite, run via `mvn test` (Maven 3.9.9, JDK 21 Temurin).
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 s -- in com.mfs.serviceplatform.canary.ReadsMetricsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.mfs.serviceplatform.canary.RegressionCatalogTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s -- in com.mfs.serviceplatform.canary.harness.GateTest
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0

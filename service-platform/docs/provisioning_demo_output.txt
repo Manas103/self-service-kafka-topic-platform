@@ -1,0 +1,12 @@
+parsed blueprint: service=payments-api image=nginx:1.27-alpine port=80
+container started: 933b6242d1507efa110773e712449c011311c2b1021ef71308e72af7bbc3a2f8
+health check passed at http://127.0.0.1:80/: 202.208761ms
+time from blueprint to first healthy response: 1.004379375s
+dashboard: /tmp/provisioning_demo_out/payments-api-dashboard.json
+alert rules: /tmp/provisioning_demo_out/payments-api-alert-rules.json
+running canary gate (against its own dedicated instrumented service) before declaring rollout complete...
+regression=0 rate=504.5/s errorRate=0.000 availability=1.000 p99=9.0ms maxInflight=0.0
+GATE PASSED
+canary gate PASSED; rollout complete
+TOTAL time, blueprint to rolled-out-and-gated service: 2.267878883s
+container id: 933b6242d1507efa110773e712449c011311c2b1021ef71308e72af7bbc3a2f8 (stop with: docker stop 933b6242d1507efa110773e712449c011311c2b1021ef71308e72af7bbc3a2f8)

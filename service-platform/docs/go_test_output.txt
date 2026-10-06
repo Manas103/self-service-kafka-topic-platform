@@ -1,0 +1,23 @@
+?   	selfservice/controlplane/cmd/provisionctl	[no test files]
+=== RUN   TestParsesAllFieldsAndEnv
+--- PASS: TestParsesAllFieldsAndEnv (0.00s)
+=== RUN   TestDefaultsReplicasToOne
+--- PASS: TestDefaultsReplicasToOne (0.00s)
+=== RUN   TestRejectsUnknownKey
+--- PASS: TestRejectsUnknownKey (0.00s)
+=== RUN   TestRejectsMissingRequiredField
+--- PASS: TestRejectsMissingRequiredField (0.00s)
+=== RUN   TestIgnoresBlankLinesAndComments
+--- PASS: TestIgnoresBlankLinesAndComments (0.00s)
+PASS
+ok  	selfservice/controlplane/internal/blueprint	0.006s
+=== RUN   TestRenderWritesOneDashboardAndOneAlertRulesFilePerService
+--- PASS: TestRenderWritesOneDashboardAndOneAlertRulesFilePerService (0.00s)
+=== RUN   TestRenderIsIdempotentPerServiceNotCumulative
+--- PASS: TestRenderIsIdempotentPerServiceNotCumulative (0.00s)
+PASS
+ok  	selfservice/controlplane/internal/dashboard	0.005s
+=== RUN   TestCreateStartStopRemoveAgainstARealDockerDaemon
+--- PASS: TestCreateStartStopRemoveAgainstARealDockerDaemon (1.49s)
+PASS
+ok  	selfservice/controlplane/internal/docker	1.494s

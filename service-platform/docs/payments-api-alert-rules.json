@@ -1,0 +1,33 @@
+{
+  "service": "payments-api",
+  "rules": [
+    {
+      "name": "error-rate-high",
+      "indicator": "errors",
+      "operator": "\u003e",
+      "threshold": 0.02,
+      "notifyEmail": "payments-oncall@example.com"
+    },
+    {
+      "name": "availability-low",
+      "indicator": "availability",
+      "operator": "\u003c",
+      "threshold": 0.995,
+      "notifyEmail": "payments-oncall@example.com"
+    },
+    {
+      "name": "latency-p99-high",
+      "indicator": "duration_p99_ms",
+      "operator": "\u003e",
+      "threshold": 500,
+      "notifyEmail": "payments-oncall@example.com"
+    },
+    {
+      "name": "saturation-high",
+      "indicator": "inflight",
+      "operator": "\u003e",
+      "threshold": 30,
+      "notifyEmail": "payments-oncall@example.com"
+    }
+  ]
+}
