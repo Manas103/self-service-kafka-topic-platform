@@ -1,0 +1,32 @@
+mvn test (k8s-platform), 2026-11-09T07:47:05Z
+
+=== target/surefire-reports/com.manas.kafkaplatform.k8splatform.ClusterRequestParserTest.txt ===
+-------------------------------------------------------------------------------
+Test set: com.manas.kafkaplatform.k8splatform.ClusterRequestParserTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.manas.kafkaplatform.k8splatform.ClusterRequestParserTest
+
+=== target/surefire-reports/com.manas.kafkaplatform.k8splatform.admission.DeterminismInvariantTest.txt ===
+-------------------------------------------------------------------------------
+Test set: com.manas.kafkaplatform.k8splatform.admission.DeterminismInvariantTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s -- in com.manas.kafkaplatform.k8splatform.admission.DeterminismInvariantTest
+
+=== target/surefire-reports/com.manas.kafkaplatform.k8splatform.admission.FalseRejectionTest.txt ===
+-------------------------------------------------------------------------------
+Test set: com.manas.kafkaplatform.k8splatform.admission.FalseRejectionTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.manas.kafkaplatform.k8splatform.admission.FalseRejectionTest
+
+=== target/surefire-reports/com.manas.kafkaplatform.k8splatform.admission.ValidationReferenceOracleTest.txt ===
+-------------------------------------------------------------------------------
+Test set: com.manas.kafkaplatform.k8splatform.admission.ValidationReferenceOracleTest
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in com.manas.kafkaplatform.k8splatform.admission.ValidationReferenceOracleTest
+
+=== target/surefire-reports/com.manas.kafkaplatform.k8splatform.manifests.K8sManifestRendererTest.txt ===
+-------------------------------------------------------------------------------
+Test set: com.manas.kafkaplatform.k8splatform.manifests.K8sManifestRendererTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in com.manas.kafkaplatform.k8splatform.manifests.K8sManifestRendererTest
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.manas.kafkaplatform</groupId>
+    <artifactId>k8s-platform</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>k8s-platform</name>
+    <description>
+        Self-serve Kafka provisioning on Kubernetes: a declarative cluster request, an admission
+        policy, rendered Kubernetes manifests, and a reconcile loop. A standalone module, not part
+        of the root aggregator's module list (same precedent as service-platform/canary), because
+        its tests need a real Kubernetes cluster (kind, inside WSL2) the root build does not assume.
+    </description>
+
+    <properties>
+        <maven.compiler.release>21</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>5.10.2</junit.version>
+        <kafka.clients.version>3.7.1</kafka.clients.version>
+        <!-- Cluster-provisioning tests need a real kind cluster inside WSL2; excluded from the
+             default run the same way HealthBenchmarkRunner's "benchmark" tag is elsewhere in
+             this portfolio. Run explicitly with -Dsurefire.excludedGroups= . -->
+        <surefire.excludedGroups>cluster</surefire.excludedGroups>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.clients.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <excludedGroups>${surefire.excludedGroups}</excludedGroups>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
